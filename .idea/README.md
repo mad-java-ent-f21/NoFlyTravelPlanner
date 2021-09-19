@@ -1,5 +1,5 @@
 People may have many reason for wanting to travel but not wanting to fly.  If neither a staycation nor an 
-trip is desired, there are few online resources broad enough to explore the options - car, bus, train, boat.
+airplane trip is desired, there are few online resources broad enough to explore the options - car, bus, train, boat.
 This site is a multi-function resource for those people.
 Non-motorized travel - foot, bike, horse, boats that drift downriver or depend on sail - are out of scope, however.
 These options are so slow as to be impractical unless that activity is the primary reason for the trip.  People who

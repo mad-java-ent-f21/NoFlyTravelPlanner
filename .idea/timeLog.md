@@ -4,4 +4,6 @@ Week 1. Major struggle to get the enviroment working on the host, but that was a
 I didn't like Ubuntu.  Using Intellij on Windows means having one enviroment for The Fortress and Enterprise Java.
 Week 2. (Up to class day, struggled to get Indie started in Intellij and github, finally succeeded with Paula's 
 help during work time.)  After this I intend to make daily enteries, but some days I will focus on The Fortress, so
-there will be on Enterprise Java entry.
+there will be no Enterprise Java entry.
+Week 3. Once again I didn't make daily entries - no excuse.  On the other hand, I finished Week 3 Thursday, focused 
+on The Fortress Friday, and read all readings and video transcripts Saturday.
