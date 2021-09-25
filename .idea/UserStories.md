@@ -1,4 +1,7 @@
 User Stories
+
+*Indicated MVP
+
 Sign up
 As a new user I want to create an account.*
 
@@ -18,7 +21,7 @@ Post travel story
 As a registered user, I want to post my adventures for others to read.*
 
 Comment on other peoples stories
-As a registered user, I want to comment on what other people post.*
+As a registered user, I want to comment on what other people post.
 
 Report misuse
 As a registered user, I want to tell an administrator if a post is outdated or false, or if abusive language 
@@ -37,7 +40,7 @@ Flag or delete posts
 As an admin, I need to be able to alert other users of potential problems, flagging the post for minor issues
 such as outdated prices, or removing a post for something more serious, such as ethnic slurs or posting about 
 a brothal.  This site does not permit posts about prostitution (even where legal) or any controled drug, 
-including marijuana.*
+including marijuana.
 
 Remove user
 If two admins agree that a person has flagrantly misused the site, they can remove the user, but separation of
