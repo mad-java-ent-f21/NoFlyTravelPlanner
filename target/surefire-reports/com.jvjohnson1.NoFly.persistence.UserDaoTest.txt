@@ -1,0 +1,54 @@
+-------------------------------------------------------------------------------
+Test set: com.jvjohnson1.NoFly.persistence.UserDaoTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 2.937 sec <<< FAILURE! - in com.jvjohnson1.NoFly.persistence.UserDaoTest
+deleteSuccess()  Time elapsed: 2.822 sec  <<< ERROR!
+org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: HHH010003: JDBC Driver class not found: com.mysql.cj.jdbc.Driver
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [com.mysql.cj.jdbc.Driver]
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+Caused by: java.lang.ClassNotFoundException: Could not load requested class : com.mysql.cj.jdbc.Driver
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+
+getAllSuccess()  Time elapsed: 0.02 sec  <<< ERROR!
+org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: HHH010003: JDBC Driver class not found: com.mysql.cj.jdbc.Driver
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [com.mysql.cj.jdbc.Driver]
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+Caused by: java.lang.ClassNotFoundException: Could not load requested class : com.mysql.cj.jdbc.Driver
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+
+getByPropertyEqualSuccess()  Time elapsed: 0.019 sec  <<< ERROR!
+org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: HHH010003: JDBC Driver class not found: com.mysql.cj.jdbc.Driver
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [com.mysql.cj.jdbc.Driver]
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+Caused by: java.lang.ClassNotFoundException: Could not load requested class : com.mysql.cj.jdbc.Driver
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+
+getByPropertyLikeSuccess()  Time elapsed: 0.02 sec  <<< ERROR!
+org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: HHH010003: JDBC Driver class not found: com.mysql.cj.jdbc.Driver
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [com.mysql.cj.jdbc.Driver]
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+Caused by: java.lang.ClassNotFoundException: Could not load requested class : com.mysql.cj.jdbc.Driver
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+
+getByIdSuccess()  Time elapsed: 0.016 sec  <<< ERROR!
+org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: HHH010003: JDBC Driver class not found: com.mysql.cj.jdbc.Driver
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [com.mysql.cj.jdbc.Driver]
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+Caused by: java.lang.ClassNotFoundException: Could not load requested class : com.mysql.cj.jdbc.Driver
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+
