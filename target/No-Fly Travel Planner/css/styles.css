@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+    color: black;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #b0aea0;
+    padding: 1.5em;
+}
+
+.myNav {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: .5em 1em .5em 1em;
+    background-color: #b5b2c2;
+}
+
+img {
+    width: 90%;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 1em;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #bfc2b2;
+    padding: 1.5em;
+}
+
+.fort {
+    height: auto;
+    width: 50%;
+}
+
+.quote {
+    max-width: 50%;
+}
+
+main {
+    max-width: 45%;
+    justify-content: center;
+}
+
+aside {
+    max-width: 45%;
+    border: 3px solid black;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+form {
+    max-width: 100%;
+    justify-content: center;
+    background-color: #b0aea0;
+    border-radius: 1em;
+    padding: 1.5em;
+}
+
+.rulelist {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    padding: 1.5em;
+    background-color: #b0aea0;
+}

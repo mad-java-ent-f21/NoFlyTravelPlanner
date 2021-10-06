@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="2.937" tests="5" errors="5" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="22.411" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2021.2.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -30,7 +30,7 @@
     <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.1\plugins\maven\lib\maven-event-listener.jar"/>
     <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.1\plugins\maven\lib\maven3\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_221\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Julie Johnson\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_221\bin;C:\Program Files\nodejs\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Julie Johnson\AppData\Local\Microsoft\WindowsApps;C:\Users\Julie Johnson\AppData\Local\atom\bin;C:\Users\Julie Johnson\AppData\Local\Microsoft\WindowsApps;C:\Users\Julie Johnson\AppData\Roaming\npm;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_221\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_221\bin;C:\Program Files\nodejs\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Julie Johnson\AppData\Local\Microsoft\WindowsApps;C:\Users\Julie Johnson\AppData\Local\atom\bin;C:\Users\Julie Johnson\AppData\Local\Microsoft\WindowsApps;C:\Users\Julie Johnson\AppData\Roaming\npm;;."/>
     <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.1\plugins\maven\lib\maven3/conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -63,59 +63,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="deleteSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="2.822">
-    <error message="Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]" type="org.hibernate.service.spi.ServiceException">org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
-	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
-Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: HHH010003: JDBC Driver class not found: com.mysql.cj.jdbc.Driver
-	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
-Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [com.mysql.cj.jdbc.Driver]
-	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
-Caused by: java.lang.ClassNotFoundException: Could not load requested class : com.mysql.cj.jdbc.Driver
-	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
-</error>
-  </testcase>
-  <testcase name="getAllSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="0.02">
-    <error message="Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]" type="org.hibernate.service.spi.ServiceException">org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
-	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
-Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: HHH010003: JDBC Driver class not found: com.mysql.cj.jdbc.Driver
-	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
-Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [com.mysql.cj.jdbc.Driver]
-	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
-Caused by: java.lang.ClassNotFoundException: Could not load requested class : com.mysql.cj.jdbc.Driver
-	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
-</error>
-  </testcase>
-  <testcase name="getByPropertyEqualSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="0.019">
-    <error message="Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]" type="org.hibernate.service.spi.ServiceException">org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
-	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
-Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: HHH010003: JDBC Driver class not found: com.mysql.cj.jdbc.Driver
-	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
-Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [com.mysql.cj.jdbc.Driver]
-	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
-Caused by: java.lang.ClassNotFoundException: Could not load requested class : com.mysql.cj.jdbc.Driver
-	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
-</error>
-  </testcase>
-  <testcase name="getByPropertyLikeSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="0.02">
-    <error message="Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]" type="org.hibernate.service.spi.ServiceException">org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
-	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
-Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: HHH010003: JDBC Driver class not found: com.mysql.cj.jdbc.Driver
-	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
-Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [com.mysql.cj.jdbc.Driver]
-	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
-Caused by: java.lang.ClassNotFoundException: Could not load requested class : com.mysql.cj.jdbc.Driver
-	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
-</error>
-  </testcase>
-  <testcase name="getByIdSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="0.016">
-    <error message="Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]" type="org.hibernate.service.spi.ServiceException">org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
-	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
-Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: HHH010003: JDBC Driver class not found: com.mysql.cj.jdbc.Driver
-	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
-Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [com.mysql.cj.jdbc.Driver]
-	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
-Caused by: java.lang.ClassNotFoundException: Could not load requested class : com.mysql.cj.jdbc.Driver
-	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
-</error>
-  </testcase>
+  <testcase name="deleteSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="5.505"/>
+  <testcase name="getAllSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="2.501"/>
+  <testcase name="getByPropertyEqualSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="2.622"/>
+  <testcase name="getByPropertyLikeSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="3.135"/>
+  <testcase name="getByIdSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="4.572"/>
+  <testcase name="insertSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="4.04"/>
 </testsuite>

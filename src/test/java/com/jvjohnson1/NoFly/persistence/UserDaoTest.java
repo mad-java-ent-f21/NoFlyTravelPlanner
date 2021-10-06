@@ -69,7 +69,7 @@ class UserDaoTest {
     @Test
     void getAllSuccess() {
         List<User> users = dao.getAll();
-        assertEquals(17, users.size());
+        assertEquals(18, users.size());
     }
 
     /**
@@ -88,6 +88,6 @@ class UserDaoTest {
     @Test
     void getByPropertyLikeSuccess() {
         List<User> users = dao.getByPropertyLike("lastName", "S");
-        assertEquals(8, users.size());
+        assertEquals(9, users.size());
     }
 }
