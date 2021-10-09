@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="21.695" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="25.224" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2021.2.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\bin"/>
     <property name="java.vm.version" value="25.221-b11"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Julie Johnson\IdeaProjects\No-Fly Travel Planner"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Julie Johnson\IdeaProjects\NoFlyTravelPlanner"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Julie Johnson\IdeaProjects\No-Fly Travel Planner"/>
+    <property name="user.dir" value="C:\Users\Julie Johnson\IdeaProjects\NoFlyTravelPlanner"/>
     <property name="java.runtime.version" value="1.8.0_221-b11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_221\jre\lib\endorsed"/>
@@ -63,10 +63,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="deleteSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="5.257"/>
-  <testcase name="getAllSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="3.426"/>
-  <testcase name="getByPropertyEqualSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="2.302"/>
-  <testcase name="getByPropertyLikeSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="3.979"/>
-  <testcase name="getByIdSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="4.11"/>
-  <testcase name="insertSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="2.582"/>
+  <testcase name="deleteSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="5.701"/>
+  <testcase name="getAllSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="3.718"/>
+  <testcase name="getByPropertyEqualSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="2.649"/>
+  <testcase name="getByPropertyLikeSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="3.693"/>
+  <testcase name="getByIdSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="5.357"/>
+  <testcase name="insertSuccess" classname="com.jvjohnson1.NoFly.persistence.UserDaoTest" time="4.064"/>
 </testsuite>
