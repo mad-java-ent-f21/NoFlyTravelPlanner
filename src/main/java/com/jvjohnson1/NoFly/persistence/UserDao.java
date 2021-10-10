@@ -80,7 +80,7 @@ public class UserDao {
         Root<User> root = query.from( User.class );
         List<User> users = session.createQuery( query ).getResultList();
 
-//        logger.debug("The list of users " + users);
+        logger.debug("The list of users " + users);
         session.close();
 
         return users;
@@ -93,7 +93,7 @@ public class UserDao {
     public List<User> getByPropertyEqual(String propertyName, String value) {
         Session session = sessionFactory.openSession();
 
-//        logger.debug("Searching for user with " + propertyName + " = " + value);
+        logger.debug("Searching for user with " + propertyName + " = " + value);
 
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<User> query = builder.createQuery( User.class );
@@ -112,7 +112,7 @@ public class UserDao {
     public List<User> getByPropertyLike(String propertyName, String value) {
         Session session = sessionFactory.openSession();
 
-//        logger.debug("Searching for user with {} = {}",  propertyName, value);
+        logger.debug("Searching for user with {} = {}",  propertyName, value);
 
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<User> query = builder.createQuery( User.class );
