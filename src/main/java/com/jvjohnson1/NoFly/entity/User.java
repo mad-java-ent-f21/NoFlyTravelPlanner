@@ -14,6 +14,8 @@ import javax.persistence.*;
 @Table(name = "users")
 public class User {
 
+    private final Logger logger = LogManager.getLogger(this.getClass());
+
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
     @GenericGenerator(name = "native",strategy = "native")

@@ -1,4 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: com.jvjohnson1.NoFly.persistence.UserDaoTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.224 sec - in com.jvjohnson1.NoFly.persistence.UserDaoTest
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 25.269 sec <<< FAILURE! - in com.jvjohnson1.NoFly.persistence.UserDaoTest
+deleteSuccess()  Time elapsed: 6.864 sec  <<< ERROR!
+org.hibernate.MappingException: Could not determine type for: org.apache.logging.log4j.Logger, at table: users, for columns: [org.hibernate.mapping.Column(logger)]
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+
+getAllSuccess()  Time elapsed: 3.616 sec  <<< ERROR!
+org.hibernate.MappingException: Could not determine type for: org.apache.logging.log4j.Logger, at table: users, for columns: [org.hibernate.mapping.Column(logger)]
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+
+getByPropertyEqualSuccess()  Time elapsed: 2.694 sec  <<< ERROR!
+org.hibernate.MappingException: Could not determine type for: org.apache.logging.log4j.Logger, at table: users, for columns: [org.hibernate.mapping.Column(logger)]
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+
+getByPropertyLikeSuccess()  Time elapsed: 4.105 sec  <<< ERROR!
+org.hibernate.MappingException: Could not determine type for: org.apache.logging.log4j.Logger, at table: users, for columns: [org.hibernate.mapping.Column(logger)]
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+
+getByIdSuccess()  Time elapsed: 4.465 sec  <<< ERROR!
+org.hibernate.MappingException: Could not determine type for: org.apache.logging.log4j.Logger, at table: users, for columns: [org.hibernate.mapping.Column(logger)]
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+
+insertSuccess()  Time elapsed: 3.492 sec  <<< ERROR!
+org.hibernate.MappingException: Could not determine type for: org.apache.logging.log4j.Logger, at table: users, for columns: [org.hibernate.mapping.Column(logger)]
+	at com.jvjohnson1.NoFly.persistence.UserDaoTest.setUp(UserDaoTest.java:26)
+
