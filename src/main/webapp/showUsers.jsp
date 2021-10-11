@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <head>
     <title>The NoFly Travel Planner</title>
@@ -26,20 +28,21 @@
         <li><a href="showUsers.jsp">CRUD test (temporary)</a></li>
     </ul>
 </nav>
-<main>
-    <form id="multipleForm" method="post" action="http://itins3.madisoncollege.edu/echo.php">
-        <h3>Sign in to post content.</h3>
-        <label for="id">User ID</label>
-        <input type="text" required id="id" placeholder="id (required)" name="id">
-        <br>
 
-        <label for="password">Last Name</label>
-        <input type="text" id="password" placeholder="password (required)" name="password" required>
-        <br>
+<%--TODO Pretty up the results!--%>
+<div class="container-fluid">
+    <h2>Search Results: </h2>
+    <table>
+        <tr><td>First Name</td><td>Last Name</td><td>Username</td><td>ScreenName</td></tr>
+        <c:forEach var="user" items="${Users}">
+            <tr>
+                <td>${user.firstName}</td>
+                <td>${user.lastName}</td>
+                <td>${user.userName}</td>
+                <td>${user.screenName}</td>
+            </tr>
+        </c:forEach>
+    </table>
+</div>
 
-        <button class="Sbutton" type="submit">Submit</button>
-        <button class="Cbutton" type="reset">Clear</button>
-    </form>
-</main>
-</body>
 </html>

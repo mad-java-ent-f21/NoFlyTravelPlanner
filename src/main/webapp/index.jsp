@@ -23,6 +23,7 @@
     <ul class="myNav">
         <li><a href="index.jsp">Home</a></li>
         <li><a href="login.jsp">Login</a></li>
+        <li><a href="searchUser">CRUD test (temporary)</a></li>
     </ul>
 </nav>
 <div class="container">
