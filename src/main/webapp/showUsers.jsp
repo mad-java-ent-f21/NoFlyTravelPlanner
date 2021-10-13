@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 
 <head>
     <title>The NoFly Travel Planner</title>
@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <body>
 <header>
     <div class="banner">
@@ -34,7 +34,7 @@
     <h2>Search Results: </h2>
     <table>
         <tr><td>First Name</td><td>Last Name</td><td>Username</td><td>ScreenName</td></tr>
-        <c:forEach var="user" items="${Users}">
+        <c:forEach var="user" items="${users}">
             <tr>
                 <td>${user.firstName}</td>
                 <td>${user.lastName}</td>
