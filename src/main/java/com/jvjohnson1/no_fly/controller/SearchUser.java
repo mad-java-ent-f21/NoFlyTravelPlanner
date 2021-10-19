@@ -1,6 +1,6 @@
-package com.jvjohnson1.NoFly.Controller;
+package com.jvjohnson1.no_fly.controller;
 
-import com.jvjohnson1.NoFly.persistence.UserDao;
+import com.jvjohnson1.no_fly.persistence.UserDao;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

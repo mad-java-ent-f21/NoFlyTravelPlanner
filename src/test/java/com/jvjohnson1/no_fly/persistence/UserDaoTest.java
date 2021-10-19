@@ -1,6 +1,6 @@
-package com.jvjohnson1.NoFly.persistence;
+package com.jvjohnson1.no_fly.persistence;
 
-import com.jvjohnson1.NoFly.entity.User;
+import com.jvjohnson1.no_fly.entity.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -49,6 +49,7 @@ class UserDaoTest {
         assertNotEquals(0,id);
         User insertedUser = dao.getById(id);
         assertEquals("Fred", insertedUser.getFirstName());
+//        assertTrue(newUser.equals(dao.getById(id))); would only be true for the same object, not equal values
         // Could continue comparing all values, but
         // it may make sense to use .equals()
         // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode

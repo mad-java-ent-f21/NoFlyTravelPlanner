@@ -1,8 +1,7 @@
-package com.jvjohnson1.NoFly.entity;
+package com.jvjohnson1.no_fly.entity;
 import java.lang.*;
 import org.hibernate.annotations.GenericGenerator;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
 import javax.persistence.*;
 /**
  * A class to represent a user.

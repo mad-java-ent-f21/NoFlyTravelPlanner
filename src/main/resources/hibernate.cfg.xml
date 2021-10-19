@@ -16,7 +16,7 @@
 
         <property name="hibernate.hbm2ddl.import_files_sql_extractor">org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor</property>
 
-        <mapping class="com.jvjohnson1.NoFly.entity.User"/>
+        <mapping class="com.jvjohnson1.no_fly.entity.User"/>
 
     </session-factory>
 

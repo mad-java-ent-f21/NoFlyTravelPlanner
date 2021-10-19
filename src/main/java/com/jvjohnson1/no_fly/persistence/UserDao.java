@@ -1,6 +1,6 @@
-package com.jvjohnson1.NoFly.persistence;
+package com.jvjohnson1.no_fly.persistence;
 
-import com.jvjohnson1.NoFly.entity.User;
+import com.jvjohnson1.no_fly.entity.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
@@ -36,7 +36,9 @@ public class UserDao {
      */
     public void saveOrUpdate(User user) {
         Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
         session.saveOrUpdate(user);
+        transaction.commit();
         session.close();
     }
 

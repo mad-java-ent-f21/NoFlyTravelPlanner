@@ -1,4 +1,4 @@
-package com.jvjohnson1.NoFly.persistence;
+package com.jvjohnson1.no_fly.persistence;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

@@ -1,4 +1,4 @@
-package com.jvjohnson1.NoFly.persistence;
+package com.jvjohnson1.no_fly.persistence;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
