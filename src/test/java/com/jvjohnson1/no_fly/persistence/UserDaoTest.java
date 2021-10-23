@@ -48,7 +48,7 @@ class UserDaoTest {
         int id = dao.insert(newUser);
         assertNotEquals(0,id);
         User insertedUser = dao.getById(id);
-        assertEquals("Fred", insertedUser.getFirstName());
+        assertTrue(newUser.equals(insertedUser));
 //        assertTrue(newUser.equals(dao.getById(id))); would only be true for the same object, not equal values
         // Could continue comparing all values, but
         // it may make sense to use .equals()

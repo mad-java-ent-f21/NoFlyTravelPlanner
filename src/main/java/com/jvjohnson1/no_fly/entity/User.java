@@ -37,6 +37,15 @@ public class User {
 
     }
 
+
+    public boolean equals(User compare) {
+        if (this.id == compare.getId())  {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public User(int id, String firstName, String lastName, String userName,
                 String password, String screen) {
         this.id = id;
