@@ -1,4 +1,6 @@
+drop table reviews;
 drop table users;
+drop table destinations;
 
 create table users
                (
@@ -28,3 +30,35 @@ create table users
                insert into users values (16, 'Lisa', 'Jordan', 'ljorden', 'nadroJ', 'Creek');
                insert into users values (17, 'Jason', 'Shardt', 'jshardt', 'tdrahS', 'prairewalker');
                insert into users values (18, 'Amder', 'Brenner', 'abrenner', 'rennerB', 'RVRoadee');
+
+create table destinations
+(
+    DestinationID     int        not null,
+    type              text       null,
+    location          text       not null,
+    nearest_Amtrak    int        null,
+    nearest_Grayhound int        null,
+    nearest_port      int        null,
+    rental_car        tinyint(1) null,
+    activity          text       null,
+    overnight         text       null,
+    constraint destinations_DestinationID_uindex
+        unique (DestinationID)
+);
+
+alter table destinations
+    add primary key (DestinationID);
+
+create table reviews
+(
+    userid        int  not null,
+    DestinationID int  not null,
+    image         text null,
+    review_text   text null,
+    constraint reviews_destinations_DestinationID_fk
+        foreign key (DestinationID) references destinations (DestinationID),
+    constraint reviews_users_id_fk
+        foreign key (userid) references users (id)
+);
+
+

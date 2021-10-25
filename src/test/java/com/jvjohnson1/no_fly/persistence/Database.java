@@ -46,16 +46,11 @@ public class Database {
             properties.load (this.getClass().getResourceAsStream("/database.properties"));
         } catch (IOException ioe) {
             logger.info("Database.loadProperties()...Cannot load the properties file");
-            logger.info(printStackTrace());
 
         } catch (Exception e) {
             logger.error("Database.loadProperties()..." + e);
         }
 
-    }
-
-    private String printStackTrace() {
-        return printStackTrace();
     }
 
     /** get the only Database object available
