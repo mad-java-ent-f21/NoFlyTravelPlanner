@@ -86,7 +86,6 @@ public class UserDao {
 
         logger.debug("The list of users " + users);
         session.close();
-
         return users;
     }
 
