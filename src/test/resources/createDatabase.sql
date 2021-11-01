@@ -1,6 +1,6 @@
-drop table reviews;
-drop table users;
-drop table destinations;
+DROP TABLE IF EXISTS `reviews`;
+DROP TABLE IF EXISTS `destinations`;
+DROP TABLE IF EXISTS `users`;
 
 create table users
                (
@@ -49,6 +49,9 @@ create table destinations
 alter table destinations
     add primary key (DestinationID);
 
+INSERT INTO `destinations` VALUES (54880,'Park','Wisconsin',137,14,0,15,'Scenic','Camp');
+INSERT INTO `destinations` VALUES (80809,'Mountain','Colorado',100,30,0,29,'Scenic','Multiple');
+
 create table reviews
 (
     userid        int  not null,
@@ -61,4 +64,6 @@ create table reviews
         foreign key (userid) references users (id)
 );
 
+INSERT INTO `reviews` VALUES (7,54880,'images/LittleM.jpg','TextReviews/Pattison1.txt');
+INSERT INTO `reviews` VALUES (12,54880,'images/seasonal.JPG','TextReviews/Pattison2.txt');
 

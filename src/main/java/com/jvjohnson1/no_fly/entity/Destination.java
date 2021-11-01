@@ -1,23 +1,48 @@
 package com.jvjohnson1.no_fly.entity;
+import java.lang.*;
+import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.*;
 import java.util.Objects;
 
+@Entity(name = "Destination")
+@Table(name = "destinations")
 public class Destination {
 
+    @Id
+    @Column(name = "DestinationID", nullable = false)
+    @GenericGenerator(name = "native",strategy = "native")
     private int DestinationID;
+
+    @Column(name = "type")
     private String type;
+
+    @Column(name = "location")
     private String location;
+
+    @Column(name = "nearest_Amtrak")
     private int nearestAmtrak;
+
+    @Column(name = "nearest_Grayhound")
     private int nearestGrayhound;
+
+    @Column(name = "nearest_port")
     private int nearestPort;
+
+    @Column(name = "rental_car")
     private int nearestRentalCar;
+
+    @Column(name = "activity")
     private String Activity;
+
+    @Column(name = "overnight")
+    private String overnight;
 
     public Destination() {
 
     }
 
-    public Destination(int destinationID, String type, String location, int nearestAmtrak, int nearestGrayhound, int nearestPort, int nearestRentalCar, String activity) {
+    public Destination(int destinationID, String type, String location, int nearestAmtrak, int nearestGrayhound, int nearestPort, int nearestRentalCar, String activity, String night) {
         DestinationID = destinationID;
         this.type = type;
         this.location = location;
@@ -26,6 +51,7 @@ public class Destination {
         this.nearestPort = nearestPort;
         this.nearestRentalCar = nearestRentalCar;
         Activity = activity;
+        overnight = night;
     }
 
     public int getDestinationID() {
@@ -92,6 +118,14 @@ public class Destination {
         Activity = activity;
     }
 
+    public String getOvernight() {
+        return Activity;
+    }
+
+    public void setOvernight(String activity) {
+        Activity = activity;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -116,6 +150,7 @@ public class Destination {
                 ", nearestPort=" + nearestPort +
                 ", nearestRentalCar=" + nearestRentalCar +
                 ", Activity='" + Activity + '\'' +
+                ", overnight='" + overnight + '\'' +
                 '}';
     }
 }
