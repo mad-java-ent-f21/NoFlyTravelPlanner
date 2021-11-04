@@ -1,7 +1,7 @@
 package com.jvjohnson1.no_fly.persistence;
 
 import com.jvjohnson1.no_fly.entity.Destination;
-import com.jvjohnson1.no_fly.entity.User;
+import com.jvjohnson1.no_fly.persistence.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -22,7 +22,7 @@ class DestinationDaoTest {
     void setUp() {
 
         Database testDatabase = Database.getInstance();
-        testDatabase.runSQL("createDatabase.sql");
+        testDatabase.runSQL("createDatabaseDump.sql");
 
         dao = new DestinationDao();
     }

@@ -2,6 +2,7 @@ package com.jvjohnson1.no_fly.persistence;
 
 import com.jvjohnson1.no_fly.entity.Destination;
 import com.jvjohnson1.no_fly.entity.Review;
+import com.jvjohnson1.no_fly.entity.User;
 import jdk.nashorn.internal.runtime.RewriteException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -23,18 +24,44 @@ public class ReviewDao {
     /**
      * Get user by id
      */
-    public Review getByDestination(int id) {
+    public List<Review> getByDestination(int id) {
         Session session = sessionFactory.openSession();
-        Review results = session.get( Review.class, id );
+        String propertyName = "DestinationID";
+        logger.debug("Searching for reviews by destination " + id);
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<Review> query = builder.createQuery( Review.class );
+        Root<Review> root = query.from( Review.class );
+        query.select(root).where(builder.equal(root.get(propertyName), id));
+        List<Review> trips = session.createQuery( query ).getResultList();
+
         session.close();
-        return results;
+        return trips;
     }
 
-    public Review getByUser(int id) {
+    public List<Review> getByUserID(int id) {
         Session session = sessionFactory.openSession();
-        Review results = session.get( Review.class, id );
+        String propertyName = "userid";
+        logger.debug("Searching for reviews by writer id " + id);
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<Review> query = builder.createQuery( Review.class );
+        Root<Review> root = query.from( Review.class );
+        query.select(root).where(builder.equal(root.get(propertyName), id));
+        List<Review> trips = session.createQuery( query ).getResultList();
+
         session.close();
-        return results;
+        return trips;
+    }
+
+    public Review getByFullKey(int writer, int place) {
+        List<Review> step = getByUserID(writer);
+        for (Review by : step) {
+            if (by.getDestinationId() == place) {
+                return by;
+            }
+        }
+        return null;
     }
 
     /**
@@ -67,7 +94,7 @@ public class ReviewDao {
      * Delete a Destination
      * @param Trip Destination to be deleted
      */
-    public void delete(Destination Trip) {
+    public void delete(Review Trip) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         session.delete(Trip);
@@ -79,16 +106,16 @@ public class ReviewDao {
      * Get user by property (exact match)
      * sample usage: getByPropertyEqual("lastname", "Curry")
      */
-    public List<Destination> getByPropertyEqual(String propertyName, String value) {
+    public List<Review> getByPropertyEqual(String propertyName, String value) {
         Session session = sessionFactory.openSession();
 
         logger.debug("Searching for destination with " + propertyName + " = " + value);
 
         CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<Destination> query = builder.createQuery( Destination.class );
-        Root<Destination> root = query.from( Destination.class );
+        CriteriaQuery<Review> query = builder.createQuery( Review.class );
+        Root<Review> root = query.from( Review.class );
         query.select(root).where(builder.equal(root.get(propertyName), value));
-        List<Destination> trips = session.createQuery( query ).getResultList();
+        List<Review> trips = session.createQuery( query ).getResultList();
 
         session.close();
         return trips;
